@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package netV;
+
+option go_package = "netV/Services;pb";
+
+service Register{
+    rpc RegisterDevice(Device) returns (ID);
+    rpc GetDevicebyID (ID) returns (Device);
+}
+
+message Device{
+    string Model = 1;
+    string Make = 2;
+    string Version = 3;
+    string IP = 4;
+}
+
+message ID {
+    string netVID =1;
+}
+
+
+
