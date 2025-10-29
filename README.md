@@ -14,5 +14,3 @@ A lightweight, generic network observability backend built with Go, gRPC, and Mo
 ## Project Structure
 ## How to use 
 ## Justification
-
-git 
